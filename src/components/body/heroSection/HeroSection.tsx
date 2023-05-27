@@ -10,9 +10,16 @@ const HeroSection = () => {
   useEffect(() => {
     const handleScroll = () => {
       const video = videoRef.current;
-      if (video) {
+      const bodyVdText = document.querySelector(
+        `.${styles.body_vd_text}`
+      ) as HTMLElement;
+      if (video && bodyVdText) {
         const scrollY = window.scrollY || window.pageYOffset;
-        video.style.transform = `translateY(-${scrollY * 0.3}px)`; // Adjust the factor (0.3) to control the scroll effect
+        console.log("Scroll Y is:", scrollY);
+        video.style.transform = `translateY(-${scrollY * 0.3}px)`;
+
+        const opacity = 1 - scrollY / 300;
+        bodyVdText.style.opacity = opacity.toString();
       }
     };
 
