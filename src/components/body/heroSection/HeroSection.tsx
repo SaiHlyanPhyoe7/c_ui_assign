@@ -18,8 +18,10 @@ const HeroSection = () => {
         console.log("Scroll Y is:", scrollY);
         video.style.transform = `translateY(-${scrollY * 0.3}px)`;
 
-        const opacity = 1 - scrollY / 300;
+        const opacity = 1 - scrollY / 500;
+        const vdOpacity = 1 - scrollY / 800;
         bodyVdText.style.opacity = opacity.toString();
+        video.style.opacity = vdOpacity.toString();
       }
     };
 
