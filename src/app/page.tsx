@@ -1,9 +1,13 @@
+import MainNavbar from "@/components/navbar/main_navbar/MainNavbar";
 import styles from "./page.module.scss";
+import SubNavbar from "@/components/navbar/sub_navbar/SubNavbar";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <h2>Next</h2>
+    <main style={{ height: "5000px" }} className={styles.main}>
+      <MainNavbar />
+      <SubNavbar />
+      
     </main>
   );
 }

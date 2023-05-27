@@ -1,0 +1,36 @@
+@import "/src/app/variable.scss";
+
+.body_sub_nav {
+  background-color: $black;
+  padding: 10px 0 10px 0;
+
+  > div {
+    font-size: $font_size;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 1200px) {
+      max-width: 1000px;
+    }
+    > h1 {
+      font-size: $font_size_h2;
+      font-weight: bold;
+    }
+    > button {
+      background-color: $white;
+      border-radius: 15px;
+      color: $black;
+      padding: 3px 10px 3px 10px;
+    }
+  }
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
