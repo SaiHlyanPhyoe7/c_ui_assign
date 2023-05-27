@@ -9,7 +9,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import styles from "./_swiperSlide.module.scss";
 
-// import required modules
 import Image from "next/image";
 
 SwiperCore.use([Navigation, Pagination]);

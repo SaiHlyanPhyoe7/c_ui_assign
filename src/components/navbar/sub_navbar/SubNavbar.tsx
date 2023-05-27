@@ -11,7 +11,7 @@ const SubNavbar = () => {
       const subNavbar = subNavbarRef.current;
       if (subNavbar) {
         const { top } = subNavbar.getBoundingClientRect();
-        console.log(top);
+        // console.log(top);
         if (top <= 0) {
           subNavbar.classList.add(styles.sticky);
         } else {

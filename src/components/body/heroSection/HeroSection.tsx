@@ -15,7 +15,7 @@ const HeroSection = () => {
       ) as HTMLElement;
       if (video && bodyVdText) {
         const scrollY = window.scrollY || window.pageYOffset;
-        console.log("Scroll Y is:", scrollY);
+        // console.log("Scroll Y is:", scrollY);
         video.style.transform = `translateY(-${scrollY * 0.3}px)`;
 
         const opacity = 1 - scrollY / 500;
