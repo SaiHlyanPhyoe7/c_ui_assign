@@ -1,0 +1,63 @@
+@import "/src/app/variable.scss";
+
+.fotter_section {
+  background-color: $gray;
+  padding: 100px 0;
+  > div {
+    color: $black;
+    flex-direction: column;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: 1200px) {
+      max-width: 1200px;
+    }
+    > ol {
+      padding: 5px 0;
+      font-size: 15px;
+      color: #fffa;
+    }
+    > p {
+      color: #fffa;
+      font-size: 16px;
+    }
+  }
+}
+
+.c {
+  color: $white;
+  padding: 20px 0;
+  font-size: 14px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  color: #fffa;
+  font-size: 14px;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns for desktop */
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for tablet */
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+  }
+}
+
+.gridItem {
+  padding: 10px 0;
+  > h4 {
+    font-weight: bold;
+    padding-bottom: 7px;
+    font-size: 17px;
+  }
+  > p {
+    padding: 3px 0;
+    font-size: $font_size;
+    display: block;
+  }
+}

@@ -9,7 +9,11 @@ const MainNavbar = () => {
         {mainNavbarConstant.map((c) => {
           const key = typeof c === "string" ? c : c.key;
           const element = typeof c === "string" ? c : c.element;
-          return <div key={key}>{element}</div>;
+          return (
+            <div className={styles.poi} key={key}>
+              {element}
+            </div>
+          );
         })}
       </div>
     </div>

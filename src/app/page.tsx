@@ -9,7 +9,7 @@ import QnaSection from "@/components/body/qnaSection/QnaSection";
 
 export default function Home() {
   return (
-    <main style={{ height: "5000px" }} className={styles.main}>
+    <main className={styles.main}>
       <MainNavbar />
       <SubNavbar />
       <HeroSection />
