@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import "/src/app/variable.scss";
+
+body {
+  background-color: $black;
+}

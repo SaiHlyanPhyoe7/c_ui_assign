@@ -27,7 +27,7 @@ const SubNavbar = () => {
   }, []);
 
   return (
-    <div className={`${styles.body_sub_nav}`} ref={subNavbarRef}>
+    <div className={styles.body_sub_nav} ref={subNavbarRef}>
       <div>
         <h1>AppleTV+</h1>
         <button>Stream now</button>
