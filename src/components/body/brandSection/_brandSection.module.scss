@@ -1,0 +1,59 @@
+@import "/src/app/variable.scss";
+
+.body_brand_section {
+  background-color: #fff;
+  padding: 100px 0;
+
+  > div {
+    color: $black;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+
+    @media (min-width: 1200px) {
+      max-width: 1200px;
+    }
+    > h1 {
+      font-size: $font_size_h1;
+      font-weight: bolder;
+      text-align: center;
+    }
+    > h2 {
+      padding: 20px 0;
+      font-size: 35px;
+      font-weight: bold;
+    }
+    > a {
+      color: $lightBlue;
+    }
+    > p {
+      text-align: center;
+      > a {
+        color: $lightBlue;
+      }
+    }
+  }
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); // 5 columns on desktop
+  column-gap: 100px;
+  padding: 20px 0;
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(3, 1fr); // 3 columns on mobile
+  }
+
+  .grid_item {
+    align-self: end;
+    > h4 {
+      padding-top: 10px;
+      text-align: center;
+    }
+  }
+}
