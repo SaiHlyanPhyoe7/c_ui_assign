@@ -34,6 +34,28 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+
+  @media screen and (max-width: 924px) {
+    grid-template-columns: repeat(2, 1fr); // Two columns for tablet
+    > div {
+      > button {
+        padding: 13px 20px 13px 20px;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr); // One column for mobile
+    > div {
+      > button {
+        padding: 13px 20px 13px 20px;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
 }
 
 .ads_b {
@@ -62,5 +84,30 @@
     color: $black;
     border-radius: 25px;
     padding: 12px 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .body_ads_section {
+    padding: 20px;
+  }
+  .ads_a {
+    > h2 {
+      font-size: 25px;
+    }
+  }
+}
+
+// Media query for mobile view
+@media screen and (max-width: 768px) {
+  .body_ads_section {
+    padding: 20px;
+  }
+  .ads_a {
+    > div {
+      > div {
+        display: none;
+      }
+    }
   }
 }

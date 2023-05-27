@@ -12,7 +12,6 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    height: 100vh;
 
     @media (min-width: 1200px) {
       max-width: 1200px;
@@ -54,6 +53,35 @@
     > h4 {
       padding-top: 10px;
       text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .body_brand_section {
+    padding: 20px;
+    > div {
+      > h1 {
+        font-size: 25px;
+      }
+      > h2 {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .body_brand_section {
+    padding: 20px;
+    > div {
+      > h1 {
+        font-size: 25px;
+        padding: 10px 0;
+      }
+      > h2 {
+        font-size: 28px;
+      }
     }
   }
 }

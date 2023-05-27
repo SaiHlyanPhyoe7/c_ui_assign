@@ -61,3 +61,31 @@
     display: block;
   }
 }
+
+@media (max-width: 1024px) {
+  .fotter_section {
+    padding: 20px;
+    > div {
+      > ol {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .fotter_section {
+    padding: 20px;
+    > div {
+      > ol {
+        font-size: 12px;
+      }
+      > p {
+        font-size: 13px;
+      }
+      .fotter_k {
+        font-size: 14px;
+      }
+    }
+  }
+}

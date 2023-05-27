@@ -29,6 +29,19 @@
   }
 }
 
+@media screen and (max-width: 924px) {
+  .body_sub_nav {
+    padding: 10px 20px;
+  }
+}
+
+// Media query for mobile view
+@media screen and (max-width: 768px) {
+  .body_sub_nav {
+    padding: 10px 20px;
+  }
+}
+
 .sticky {
   position: sticky;
   top: 0;

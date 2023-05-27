@@ -38,3 +38,51 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .body_qna_section {
+    padding: 20px;
+    > div {
+      > h1 {
+        font-size: 25px;
+      }
+      > div {
+        > div {
+          > details {
+            > summary {
+              font-size: 18px;
+              font-weight: 400;
+            }
+            > p {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .body_qna_section {
+    padding: 20px;
+    > div {
+      > h1 {
+        font-size: 25px;
+      }
+      > div {
+        > div {
+          > details {
+            > summary {
+              font-size: 18px;
+              font-weight: 400;
+            }
+            > p {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

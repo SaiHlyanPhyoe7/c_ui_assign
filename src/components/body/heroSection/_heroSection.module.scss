@@ -45,3 +45,36 @@
     max-width: 1000px;
   }
 }
+
+@media screen and (max-width: 924px) {
+  .body_vd_text {
+    padding: 25px;
+    font-size: 40px;
+    text-align: center;
+    > div {
+      text-align: start;
+      > button {
+        padding: 13px 20px 13px 20px;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+// Media query for mobile view
+@media screen and (max-width: 768px) {
+  .body_vd_text {
+    padding: 25px;
+    font-size: 40px;
+    text-align: center;
+    > div {
+      text-align: start;
+      > button {
+        padding: 13px 20px 13px 20px;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+}
