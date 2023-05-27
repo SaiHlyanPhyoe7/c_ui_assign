@@ -3,6 +3,7 @@ import styles from "./page.module.scss";
 import SubNavbar from "@/components/navbar/sub_navbar/SubNavbar";
 import HeroSection from "@/components/body/heroSection/HeroSection";
 import AdsSection from "@/components/body/adsSection/AdsSection";
+import MovieSection from "@/components/body/movieSection/MovieSection";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <SubNavbar />
       <HeroSection />
       <AdsSection />
+      <MovieSection />
     </main>
   );
 }

@@ -1,0 +1,12 @@
+@import "/src/app/variable.scss";
+
+.a {
+  display: flex;
+  justify-content: space-between aic;
+  align-items: center;
+  > div {
+    > button {
+      color: $white;
+    }
+  }
+}

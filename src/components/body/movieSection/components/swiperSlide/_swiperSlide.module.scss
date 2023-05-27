@@ -1,0 +1,57 @@
+@import "/src/app/variable.scss";
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image_wrapper {
+  background-color: red;
+  position: relative;
+  display: inline-block;
+}
+
+.stream_now_button {
+  position: absolute;
+  bottom: 10px;
+  opacity: 1;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: $white;
+  border-radius: 25px;
+  color: $black;
+  border: none;
+  font-size: small;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.desc {
+  position: absolute;
+  bottom: 10px;
+  opacity: 1;
+  left: 10px;
+  color: #fffa;
+  border: none;
+  font-size: small;
+  font-weight: bold;
+  cursor: pointer;
+}
