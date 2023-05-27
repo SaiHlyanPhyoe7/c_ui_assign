@@ -1,0 +1,40 @@
+@import "/src/app/variable.scss";
+
+.body_qna_section {
+  background-color: #fff;
+  padding: 100px 0;
+  > div {
+    color: $black;
+    flex-direction: column;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    @media (min-width: 1200px) {
+      max-width: 1200px;
+    }
+    > h1 {
+      font-size: 80px;
+      text-align: center;
+      font-weight: bold;
+    }
+    > div {
+      padding: 40px 0;
+      > div {
+        > details {
+          padding: 20px 0;
+          border-bottom: 1px solid $black;
+          > summary {
+            font-size: 25px;
+            font-weight: 500;
+          }
+          > p {
+            font-size: 18px;
+            padding: 10px 0;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

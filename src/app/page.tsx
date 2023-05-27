@@ -5,6 +5,7 @@ import HeroSection from "@/components/body/heroSection/HeroSection";
 import AdsSection from "@/components/body/adsSection/AdsSection";
 import MovieSection from "@/components/body/movieSection/MovieSection";
 import BrandSection from "@/components/body/brandSection/BrandSection";
+import QnaSection from "@/components/body/qnaSection/QnaSection";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <AdsSection />
       <MovieSection />
       <BrandSection />
+      <QnaSection />
     </main>
   );
 }
